@@ -1,13 +1,14 @@
-# Angular CRUD (Basado en el proyecto original de [Sotobotero](https://sotobotero.com))
-[![Powered by @sotobotero](https://img.shields.io/badge/Powered%20by-%40sotobotero-blue?style=flat-square&logo=twitter)](https://twitter.com/sotobotero)
+# Angular CRUD (Frontend del proyecto con Spring Boot)  
+(Basado en el proyecto original de [Sotobotero](https://sotobotero.com))  
+[![Powered by @sotobotero](https://img.shields.io/badge/Powered%20by-%40sotobotero-blue?style=flat-square&logo=twitter)](https://twitter.com/sotobotero)  
 [![Sotobotero.com](https://img.shields.io/badge/Powered%20by-sotobotero.com-blue?style=flat-square&logo=twitter)](https://sotobotero.com/)
 
 ## 🌟 Descripción
 
-Este proyecto es una **versión personalizada y mejorada** del repositorio original de [Sotobotero](https://sotobotero.com).  
-Forma parte de mi proceso de aprendizaje y práctica en **Angular**, donde he realizado ajustes y modificaciones tanto en la estructura como en la lógica para adaptarlo a mis necesidades y estilo de desarrollo.
+Este repositorio contiene **el frontend desarrollado en Angular** de un proyecto CRUD que se integra con un **backend en Spring Boot**.  
+Es una **versión personalizada y mejorada** del repositorio original de [Sotobotero](https://sotobotero.com), adaptada para trabajar con mi propio backend y aprendizaje de Angular y Spring Boot.
 
-> ⚙️ *El objetivo es comprender a fondo el funcionamiento de un CRUD en Angular y aplicar buenas prácticas de desarrollo frontend.*
+> ⚙️ *El objetivo es practicar la integración entre Angular y Spring Boot, y aplicar buenas prácticas de desarrollo fullstack.*
 
 ---
 
@@ -39,8 +40,8 @@ Consulta la guía original de contribución aquí:
 ## 🛠️ Requisitos
 
 1. Node.js LTS (v18.16.0 o superior) y Angular CLI (v13 o superior).  
-2. (Opcional) Backend del proyecto [customer-back](https://github.com/sotobotero/customer-back).  
-   Si no está disponible, la app cargará el front sin conexión a backend.  
+2. Backend en Spring Boot del proyecto.  
+   - Si no está disponible, la aplicación cargará el frontend sin conexión a backend, mostrando solo la interfaz.
 
 ---
 
@@ -64,7 +65,7 @@ Consulta la guía original de contribución aquí:
    ```
 5. Ir a: [http://localhost:4200/customers](http://localhost:4200/customers)
 
-La aplicación se recargará automáticamente al detectar cambios en los archivos fuente.
+> La aplicación se recargará automáticamente al detectar cambios en los archivos fuente.
 
 ---
 
