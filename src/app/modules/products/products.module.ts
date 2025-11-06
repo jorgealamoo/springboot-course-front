@@ -6,6 +6,7 @@ import { ListProductComponent } from './list-product/list-product.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MaterialModule } from '../material.module';
 import { FormsModule } from '@angular/forms';
+import { ApiModule } from 'src/services/productApi';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     ProductsRoutingModule,
     MatDialogModule,  
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ApiModule
   ]
 })
 export class ProductsModule { }
