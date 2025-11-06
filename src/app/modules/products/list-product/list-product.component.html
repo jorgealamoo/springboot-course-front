@@ -47,3 +47,17 @@
   <tr mat-header-row *matHeaderRowDef="columns"></tr>
   <tr mat-row *matRowDef="let row; columns: columns;"></tr>
 </table>
+
+<mat-paginator
+class="center"
+[pageSizeOptions]="[5, 10, 20]"
+showFirstLastButtons
+></mat-paginator>
+
+<mat-divider></mat-divider>
+
+<section class="center">
+  <button mat-flat-button color="primary" (click)="openEditModal(null)">Add Product</button>
+</section>
+
+<mat-divider></mat-divider>
