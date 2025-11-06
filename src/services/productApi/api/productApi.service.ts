@@ -106,12 +106,7 @@ export class ProductApiService extends BaseService {
 
         let localVarHeaders = this.defaultHeaders;
 
-        const localVarHttpHeaderAcceptSelected: string | undefined = options?.httpHeaderAccept ?? this.configuration.selectHeaderAccept([
-            '*/*'
-        ]);
-        if (localVarHttpHeaderAcceptSelected !== undefined) {
-            localVarHeaders = localVarHeaders.set('Accept', localVarHttpHeaderAcceptSelected);
-        }
+        localVarHeaders = localVarHeaders.set('Accept', 'application/json');
 
         const localVarHttpContext: HttpContext = options?.context ?? new HttpContext();
 
@@ -119,15 +114,6 @@ export class ProductApiService extends BaseService {
 
 
         let responseType_: 'text' | 'json' | 'blob' = 'json';
-        if (localVarHttpHeaderAcceptSelected) {
-            if (localVarHttpHeaderAcceptSelected.startsWith('text')) {
-                responseType_ = 'text';
-            } else if (this.configuration.isJsonMime(localVarHttpHeaderAcceptSelected)) {
-                responseType_ = 'json';
-            } else {
-                responseType_ = 'blob';
-            }
-        }
 
         let localVarPath = `/api/v1/product`;
         const { basePath, withCredentials } = this.configuration;
